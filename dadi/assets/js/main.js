@@ -5,6 +5,9 @@ const elementPc = document.querySelector("#dado-pc");
 // EventListener
 const buttonOk = document.getElementById("ok");
 buttonOk.addEventListener("click", function() {
+    var containerRisultato = document.getElementById("container-risultato");
+    containerRisultato.classList.remove("d-none");
+    
     // Rimuovere preventivamente i risultati per giocate multiple
     if (elementUser.firstChild) {
         elementUser.removeChild(elementUser.firstChild);
